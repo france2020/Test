@@ -14,17 +14,24 @@ package status;
 public class StausUser 
 {
     
-    public enum Status {zero, one, two, three};
-    private Status s;
-
-    public Status getS() {
-        return s;
-    }
-
-    public void setS(Status s) {
-        this.s = s;
-    }
- 
-
+    public void statusDetail(int code)
+{
+switch(code)
+        {
+        case 0: System.out.println("REJECTED");
+        break;
+        case 1: System.out.println("PENDING");
+        break;
+        case 2:
+        System.out.println("PROCESSING");
+        break;
+        case 3: 
+            System.out.println("APPROVED");
+        break;
+        default:
+         System.out.println("NOT VALID CODE");
+        break;
+        }
+}
  
 }
